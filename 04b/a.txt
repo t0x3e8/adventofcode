@@ -1,0 +1,1014 @@
+[3/15/1518 12:01 AM] Guard #709 begins shift
+[3/15/1518 12:12 AM] falls asleep
+[3/15/1518 12:53 AM] wakes up
+[3/15/1518 11:53 PM] Guard #919 begins shift
+[3/16/1518 12:01 AM] falls asleep
+[3/16/1518 12:09 AM] wakes up
+[3/16/1518 12:35 AM] falls asleep
+[3/16/1518 12:43 AM] wakes up
+[3/17/1518 12:01 AM] Guard #709 begins shift
+[3/17/1518 12:28 AM] falls asleep
+[3/17/1518 12:49 AM] wakes up
+[3/17/1518 12:57 AM] falls asleep
+[3/17/1518 12:58 AM] wakes up
+[3/18/1518 12:00 AM] Guard #2083 begins shift
+[3/18/1518 12:44 AM] falls asleep
+[3/18/1518 12:56 AM] wakes up
+[3/19/1518 12:04 AM] Guard #1907 begins shift
+[3/19/1518 12:25 AM] falls asleep
+[3/19/1518 12:40 AM] wakes up
+[3/19/1518 11:56 PM] Guard #2917 begins shift
+[3/20/1518 12:35 AM] falls asleep
+[3/20/1518 12:40 AM] wakes up
+[3/20/1518 12:46 AM] falls asleep
+[3/20/1518 12:47 AM] wakes up
+[3/20/1518 12:54 AM] falls asleep
+[3/20/1518 12:57 AM] wakes up
+[3/20/1518 11:46 PM] Guard #3319 begins shift
+[3/21/1518 12:04 AM] falls asleep
+[3/21/1518 12:27 AM] wakes up
+[3/21/1518 12:47 AM] falls asleep
+[3/21/1518 12:50 AM] wakes up
+[3/21/1518 11:52 PM] Guard #2887 begins shift
+[3/22/1518 12:03 AM] falls asleep
+[3/22/1518 12:17 AM] wakes up
+[3/23/1518 12:04 AM] Guard #1801 begins shift
+[3/23/1518 12:16 AM] falls asleep
+[3/23/1518 12:26 AM] wakes up
+[3/24/1518 12:02 AM] Guard #73 begins shift
+[3/24/1518 12:24 AM] falls asleep
+[3/24/1518 12:41 AM] wakes up
+[3/25/1518 12:01 AM] Guard #593 begins shift
+[3/25/1518 11:49 PM] Guard #853 begins shift
+[3/26/1518 12:02 AM] falls asleep
+[3/26/1518 12:31 AM] wakes up
+[3/26/1518 12:40 AM] falls asleep
+[3/26/1518 12:42 AM] wakes up
+[3/27/1518 12:02 AM] Guard #1907 begins shift
+[3/27/1518 12:10 AM] falls asleep
+[3/27/1518 12:50 AM] wakes up
+[3/27/1518 11:56 PM] Guard #593 begins shift
+[3/29/1518 12:01 AM] Guard #1801 begins shift
+[3/29/1518 12:24 AM] falls asleep
+[3/29/1518 12:43 AM] wakes up
+[3/29/1518 12:52 AM] falls asleep
+[3/29/1518 12:56 AM] wakes up
+[3/29/1518 11:56 PM] Guard #2887 begins shift
+[3/30/1518 12:21 AM] falls asleep
+[3/30/1518 12:31 AM] wakes up
+[3/30/1518 11:58 PM] Guard #503 begins shift
+[3/31/1518 12:19 AM] falls asleep
+[3/31/1518 12:31 AM] wakes up
+[3/31/1518 12:37 AM] falls asleep
+[3/31/1518 12:43 AM] wakes up
+[3/31/1518 12:50 AM] falls asleep
+[3/31/1518 12:52 AM] wakes up
+[4/1/1518 12:00 AM] Guard #2963 begins shift
+[4/1/1518 12:39 AM] falls asleep
+[4/1/1518 12:41 AM] wakes up
+[4/1/1518 11:47 PM] Guard #1907 begins shift
+[4/2/1518 12:05 AM] falls asleep
+[4/2/1518 12:09 AM] wakes up
+[4/2/1518 12:30 AM] falls asleep
+[4/2/1518 12:55 AM] wakes up
+[4/3/1518 12:01 AM] Guard #3361 begins shift
+[4/3/1518 12:08 AM] falls asleep
+[4/3/1518 12:18 AM] wakes up
+[4/3/1518 12:28 AM] falls asleep
+[4/3/1518 12:37 AM] wakes up
+[4/4/1518 12:02 AM] Guard #2917 begins shift
+[4/4/1518 12:31 AM] falls asleep
+[4/4/1518 12:36 AM] wakes up
+[4/4/1518 12:51 AM] falls asleep
+[4/4/1518 12:55 AM] wakes up
+[4/5/1518 12:03 AM] Guard #709 begins shift
+[4/5/1518 12:50 AM] falls asleep
+[4/5/1518 12:51 AM] wakes up
+[4/6/1518 12:00 AM] Guard #2843 begins shift
+[4/6/1518 12:15 AM] falls asleep
+[4/6/1518 12:44 AM] wakes up
+[4/7/1518 12:02 AM] Guard #853 begins shift
+[4/7/1518 12:10 AM] falls asleep
+[4/7/1518 12:23 AM] wakes up
+[4/7/1518 12:41 AM] falls asleep
+[4/7/1518 12:51 AM] wakes up
+[4/7/1518 12:54 AM] falls asleep
+[4/7/1518 12:57 AM] wakes up
+[4/7/1518 11:57 PM] Guard #2917 begins shift
+[4/8/1518 12:10 AM] falls asleep
+[4/8/1518 12:41 AM] wakes up
+[4/9/1518 12:01 AM] Guard #103 begins shift
+[4/9/1518 12:15 AM] falls asleep
+[4/9/1518 12:27 AM] wakes up
+[4/9/1518 12:48 AM] falls asleep
+[4/9/1518 12:52 AM] wakes up
+[4/10/1518 12:04 AM] Guard #3319 begins shift
+[4/10/1518 12:36 AM] falls asleep
+[4/10/1518 12:43 AM] wakes up
+[4/10/1518 12:46 AM] falls asleep
+[4/10/1518 12:58 AM] wakes up
+[4/10/1518 11:51 PM] Guard #1093 begins shift
+[4/11/1518 12:00 AM] falls asleep
+[4/11/1518 12:54 AM] wakes up
+[4/12/1518 12:04 AM] Guard #503 begins shift
+[4/12/1518 12:17 AM] falls asleep
+[4/12/1518 12:30 AM] wakes up
+[4/12/1518 12:34 AM] falls asleep
+[4/12/1518 12:38 AM] wakes up
+[4/12/1518 12:47 AM] falls asleep
+[4/12/1518 12:55 AM] wakes up
+[4/12/1518 11:56 PM] Guard #103 begins shift
+[4/13/1518 12:12 AM] falls asleep
+[4/13/1518 12:49 AM] wakes up
+[4/13/1518 11:58 PM] Guard #919 begins shift
+[4/14/1518 12:34 AM] falls asleep
+[4/14/1518 12:55 AM] wakes up
+[4/15/1518 12:00 AM] Guard #853 begins shift
+[4/15/1518 12:09 AM] falls asleep
+[4/15/1518 12:11 AM] wakes up
+[4/15/1518 12:37 AM] falls asleep
+[4/15/1518 12:44 AM] wakes up
+[4/15/1518 11:57 PM] Guard #1907 begins shift
+[4/16/1518 12:30 AM] falls asleep
+[4/16/1518 12:52 AM] wakes up
+[4/16/1518 11:58 PM] Guard #2917 begins shift
+[4/17/1518 12:34 AM] falls asleep
+[4/17/1518 12:39 AM] wakes up
+[4/17/1518 12:45 AM] falls asleep
+[4/17/1518 12:56 AM] wakes up
+[4/18/1518 12:00 AM] Guard #853 begins shift
+[4/18/1518 12:08 AM] falls asleep
+[4/18/1518 12:48 AM] wakes up
+[4/18/1518 11:58 PM] Guard #1093 begins shift
+[4/19/1518 12:16 AM] falls asleep
+[4/19/1518 12:53 AM] wakes up
+[4/20/1518 12:01 AM] Guard #1907 begins shift
+[4/20/1518 12:27 AM] falls asleep
+[4/20/1518 12:39 AM] wakes up
+[4/20/1518 12:43 AM] falls asleep
+[4/20/1518 12:48 AM] wakes up
+[4/21/1518 12:02 AM] Guard #151 begins shift
+[4/21/1518 12:15 AM] falls asleep
+[4/21/1518 12:32 AM] wakes up
+[4/21/1518 12:43 AM] falls asleep
+[4/21/1518 12:44 AM] wakes up
+[4/21/1518 11:56 PM] Guard #1801 begins shift
+[4/22/1518 12:11 AM] falls asleep
+[4/22/1518 12:37 AM] wakes up
+[4/22/1518 11:56 PM] Guard #2843 begins shift
+[4/23/1518 12:06 AM] falls asleep
+[4/23/1518 12:09 AM] wakes up
+[4/23/1518 12:47 AM] falls asleep
+[4/23/1518 12:55 AM] wakes up
+[4/24/1518 12:02 AM] Guard #2663 begins shift
+[4/24/1518 12:28 AM] falls asleep
+[4/24/1518 12:53 AM] wakes up
+[4/24/1518 11:59 PM] Guard #2887 begins shift
+[4/25/1518 12:13 AM] falls asleep
+[4/25/1518 12:43 AM] wakes up
+[4/25/1518 11:58 PM] Guard #2917 begins shift
+[4/26/1518 12:26 AM] falls asleep
+[4/26/1518 12:52 AM] wakes up
+[4/27/1518 12:04 AM] Guard #2887 begins shift
+[4/27/1518 12:20 AM] falls asleep
+[4/27/1518 12:23 AM] wakes up
+[4/27/1518 12:32 AM] falls asleep
+[4/27/1518 12:35 AM] wakes up
+[4/27/1518 11:57 PM] Guard #1741 begins shift
+[4/28/1518 12:42 AM] falls asleep
+[4/28/1518 12:44 AM] wakes up
+[4/28/1518 12:47 AM] falls asleep
+[4/28/1518 12:48 AM] wakes up
+[4/29/1518 12:04 AM] Guard #709 begins shift
+[4/29/1518 12:43 AM] falls asleep
+[4/29/1518 12:54 AM] wakes up
+[4/29/1518 11:53 PM] Guard #2663 begins shift
+[4/30/1518 12:02 AM] falls asleep
+[4/30/1518 12:09 AM] wakes up
+[4/30/1518 12:14 AM] falls asleep
+[4/30/1518 12:52 AM] wakes up
+[5/1/1518 12:00 AM] Guard #2963 begins shift
+[5/1/1518 12:14 AM] falls asleep
+[5/1/1518 12:53 AM] wakes up
+[5/1/1518 11:58 PM] Guard #1741 begins shift
+[5/2/1518 12:47 AM] falls asleep
+[5/2/1518 12:53 AM] wakes up
+[5/2/1518 11:57 PM] Guard #3361 begins shift
+[5/3/1518 12:39 AM] falls asleep
+[5/3/1518 12:42 AM] wakes up
+[5/3/1518 12:57 AM] falls asleep
+[5/3/1518 12:59 AM] wakes up
+[5/4/1518 12:02 AM] Guard #73 begins shift
+[5/4/1518 12:29 AM] falls asleep
+[5/4/1518 12:39 AM] wakes up
+[5/4/1518 12:46 AM] falls asleep
+[5/4/1518 12:56 AM] wakes up
+[5/5/1518 12:00 AM] Guard #2083 begins shift
+[5/5/1518 12:07 AM] falls asleep
+[5/5/1518 12:56 AM] wakes up
+[5/5/1518 11:56 PM] Guard #709 begins shift
+[5/6/1518 12:07 AM] falls asleep
+[5/6/1518 12:16 AM] wakes up
+[5/6/1518 12:45 AM] falls asleep
+[5/6/1518 12:51 AM] wakes up
+[5/6/1518 11:58 PM] Guard #1801 begins shift
+[5/7/1518 12:19 AM] falls asleep
+[5/7/1518 12:34 AM] wakes up
+[5/7/1518 12:43 AM] falls asleep
+[5/7/1518 12:48 AM] wakes up
+[5/7/1518 11:59 PM] Guard #2917 begins shift
+[5/8/1518 12:33 AM] falls asleep
+[5/8/1518 12:38 AM] wakes up
+[5/8/1518 12:45 AM] falls asleep
+[5/8/1518 12:48 AM] wakes up
+[5/8/1518 12:57 AM] falls asleep
+[5/8/1518 12:58 AM] wakes up
+[5/9/1518 12:00 AM] Guard #2887 begins shift
+[5/9/1518 12:21 AM] falls asleep
+[5/9/1518 12:38 AM] wakes up
+[5/9/1518 11:58 PM] Guard #1801 begins shift
+[5/10/1518 12:23 AM] falls asleep
+[5/10/1518 12:44 AM] wakes up
+[5/10/1518 12:56 AM] falls asleep
+[5/10/1518 12:59 AM] wakes up
+[5/11/1518 12:04 AM] Guard #2083 begins shift
+[5/11/1518 12:19 AM] falls asleep
+[5/11/1518 12:25 AM] wakes up
+[5/11/1518 12:51 AM] falls asleep
+[5/11/1518 12:58 AM] wakes up
+[5/12/1518 12:03 AM] Guard #151 begins shift
+[5/12/1518 12:37 AM] falls asleep
+[5/12/1518 12:40 AM] wakes up
+[5/12/1518 12:48 AM] falls asleep
+[5/12/1518 12:58 AM] wakes up
+[5/12/1518 11:57 PM] Guard #1907 begins shift
+[5/13/1518 12:10 AM] falls asleep
+[5/13/1518 12:36 AM] wakes up
+[5/13/1518 12:44 AM] falls asleep
+[5/13/1518 12:59 AM] wakes up
+[5/14/1518 12:00 AM] Guard #2843 begins shift
+[5/14/1518 12:40 AM] falls asleep
+[5/14/1518 12:47 AM] wakes up
+[5/14/1518 11:57 PM] Guard #103 begins shift
+[5/15/1518 12:45 AM] falls asleep
+[5/15/1518 12:49 AM] wakes up
+[5/15/1518 11:56 PM] Guard #853 begins shift
+[5/16/1518 12:22 AM] falls asleep
+[5/16/1518 12:48 AM] wakes up
+[5/17/1518 12:02 AM] Guard #2663 begins shift
+[5/17/1518 12:07 AM] falls asleep
+[5/17/1518 12:48 AM] wakes up
+[5/17/1518 11:56 PM] Guard #151 begins shift
+[5/18/1518 12:11 AM] falls asleep
+[5/18/1518 12:43 AM] wakes up
+[5/18/1518 12:51 AM] falls asleep
+[5/18/1518 12:52 AM] wakes up
+[5/18/1518 11:57 PM] Guard #103 begins shift
+[5/19/1518 12:29 AM] falls asleep
+[5/19/1518 12:41 AM] wakes up
+[5/19/1518 12:45 AM] falls asleep
+[5/19/1518 12:57 AM] wakes up
+[5/20/1518 12:00 AM] Guard #2963 begins shift
+[5/20/1518 12:26 AM] falls asleep
+[5/20/1518 12:27 AM] wakes up
+[5/20/1518 12:45 AM] falls asleep
+[5/20/1518 12:50 AM] wakes up
+[5/20/1518 11:56 PM] Guard #919 begins shift
+[5/21/1518 12:09 AM] falls asleep
+[5/21/1518 12:11 AM] wakes up
+[5/21/1518 12:27 AM] falls asleep
+[5/21/1518 12:43 AM] wakes up
+[5/21/1518 12:53 AM] falls asleep
+[5/21/1518 12:59 AM] wakes up
+[5/21/1518 11:59 PM] Guard #2917 begins shift
+[5/22/1518 12:11 AM] falls asleep
+[5/22/1518 12:58 AM] wakes up
+[5/23/1518 12:02 AM] Guard #2917 begins shift
+[5/23/1518 12:32 AM] falls asleep
+[5/23/1518 12:37 AM] wakes up
+[5/23/1518 12:54 AM] falls asleep
+[5/23/1518 12:55 AM] wakes up
+[5/23/1518 11:59 PM] Guard #2843 begins shift
+[5/24/1518 12:14 AM] falls asleep
+[5/24/1518 12:53 AM] wakes up
+[5/25/1518 12:03 AM] Guard #593 begins shift
+[5/25/1518 11:59 PM] Guard #151 begins shift
+[5/26/1518 12:35 AM] falls asleep
+[5/26/1518 12:50 AM] wakes up
+[5/26/1518 12:54 AM] falls asleep
+[5/26/1518 12:58 AM] wakes up
+[5/26/1518 11:59 PM] Guard #919 begins shift
+[5/27/1518 12:20 AM] falls asleep
+[5/27/1518 12:34 AM] wakes up
+[5/28/1518 12:02 AM] Guard #1093 begins shift
+[5/28/1518 12:11 AM] falls asleep
+[5/28/1518 12:42 AM] wakes up
+[5/28/1518 12:53 AM] falls asleep
+[5/28/1518 12:59 AM] wakes up
+[5/29/1518 12:04 AM] Guard #1741 begins shift
+[5/29/1518 12:35 AM] falls asleep
+[5/29/1518 12:54 AM] wakes up
+[5/29/1518 11:51 PM] Guard #853 begins shift
+[5/30/1518 12:04 AM] falls asleep
+[5/30/1518 12:56 AM] wakes up
+[5/31/1518 12:04 AM] Guard #2963 begins shift
+[5/31/1518 12:26 AM] falls asleep
+[5/31/1518 12:33 AM] wakes up
+[5/31/1518 12:36 AM] falls asleep
+[5/31/1518 12:56 AM] wakes up
+[5/31/1518 11:58 PM] Guard #2111 begins shift
+[6/1/1518 12:20 AM] falls asleep
+[6/1/1518 12:29 AM] wakes up
+[6/1/1518 12:37 AM] falls asleep
+[6/1/1518 12:41 AM] wakes up
+[6/1/1518 11:58 PM] Guard #1741 begins shift
+[6/2/1518 12:42 AM] falls asleep
+[6/2/1518 12:59 AM] wakes up
+[6/3/1518 12:00 AM] Guard #1093 begins shift
+[6/3/1518 12:14 AM] falls asleep
+[6/3/1518 12:36 AM] wakes up
+[6/3/1518 12:47 AM] falls asleep
+[6/3/1518 12:56 AM] wakes up
+[6/3/1518 11:50 PM] Guard #2663 begins shift
+[6/4/1518 12:01 AM] falls asleep
+[6/4/1518 12:39 AM] wakes up
+[6/4/1518 12:44 AM] falls asleep
+[6/4/1518 12:57 AM] wakes up
+[6/4/1518 11:52 PM] Guard #2887 begins shift
+[6/5/1518 12:01 AM] falls asleep
+[6/5/1518 12:42 AM] wakes up
+[6/5/1518 11:58 PM] Guard #103 begins shift
+[6/6/1518 12:31 AM] falls asleep
+[6/6/1518 12:49 AM] wakes up
+[6/6/1518 12:57 AM] falls asleep
+[6/6/1518 12:58 AM] wakes up
+[6/6/1518 11:53 PM] Guard #2663 begins shift
+[6/7/1518 12:00 AM] falls asleep
+[6/7/1518 12:04 AM] wakes up
+[6/7/1518 12:11 AM] falls asleep
+[6/7/1518 12:29 AM] wakes up
+[6/7/1518 12:38 AM] falls asleep
+[6/7/1518 12:42 AM] wakes up
+[6/7/1518 11:57 PM] Guard #2963 begins shift
+[6/8/1518 12:21 AM] falls asleep
+[6/8/1518 12:50 AM] wakes up
+[6/8/1518 11:50 PM] Guard #1093 begins shift
+[6/9/1518 12:00 AM] falls asleep
+[6/9/1518 12:43 AM] wakes up
+[6/9/1518 12:57 AM] falls asleep
+[6/9/1518 12:58 AM] wakes up
+[6/9/1518 11:57 PM] Guard #151 begins shift
+[6/10/1518 12:23 AM] falls asleep
+[6/10/1518 12:55 AM] wakes up
+[6/11/1518 12:00 AM] Guard #1907 begins shift
+[6/11/1518 12:07 AM] falls asleep
+[6/11/1518 12:41 AM] wakes up
+[6/11/1518 12:57 AM] falls asleep
+[6/11/1518 12:59 AM] wakes up
+[6/12/1518 12:03 AM] Guard #1093 begins shift
+[6/12/1518 12:32 AM] falls asleep
+[6/12/1518 12:41 AM] wakes up
+[6/12/1518 12:49 AM] falls asleep
+[6/12/1518 12:50 AM] wakes up
+[6/12/1518 11:58 PM] Guard #709 begins shift
+[6/13/1518 12:10 AM] falls asleep
+[6/13/1518 12:58 AM] wakes up
+[6/13/1518 11:48 PM] Guard #2663 begins shift
+[6/14/1518 12:03 AM] falls asleep
+[6/14/1518 12:24 AM] wakes up
+[6/14/1518 12:34 AM] falls asleep
+[6/14/1518 12:45 AM] wakes up
+[6/15/1518 12:02 AM] Guard #3319 begins shift
+[6/15/1518 12:08 AM] falls asleep
+[6/15/1518 12:56 AM] wakes up
+[6/16/1518 12:04 AM] Guard #1093 begins shift
+[6/16/1518 12:17 AM] falls asleep
+[6/16/1518 12:52 AM] wakes up
+[6/16/1518 11:58 PM] Guard #2963 begins shift
+[6/17/1518 12:08 AM] falls asleep
+[6/17/1518 12:27 AM] wakes up
+[6/17/1518 11:50 PM] Guard #2963 begins shift
+[6/18/1518 12:03 AM] falls asleep
+[6/18/1518 12:31 AM] wakes up
+[6/19/1518 12:00 AM] Guard #1907 begins shift
+[6/19/1518 12:43 AM] falls asleep
+[6/19/1518 12:48 AM] wakes up
+[6/20/1518 12:00 AM] Guard #1093 begins shift
+[6/20/1518 12:21 AM] falls asleep
+[6/20/1518 12:26 AM] wakes up
+[6/20/1518 12:39 AM] falls asleep
+[6/20/1518 12:46 AM] wakes up
+[6/20/1518 11:51 PM] Guard #2111 begins shift
+[6/21/1518 12:03 AM] falls asleep
+[6/21/1518 12:34 AM] wakes up
+[6/22/1518 12:00 AM] Guard #709 begins shift
+[6/22/1518 12:24 AM] falls asleep
+[6/22/1518 12:27 AM] wakes up
+[6/22/1518 12:35 AM] falls asleep
+[6/22/1518 12:52 AM] wakes up
+[6/23/1518 12:02 AM] Guard #1907 begins shift
+[6/23/1518 12:14 AM] falls asleep
+[6/23/1518 12:25 AM] wakes up
+[6/23/1518 12:47 AM] falls asleep
+[6/23/1518 12:50 AM] wakes up
+[6/23/1518 11:50 PM] Guard #1801 begins shift
+[6/24/1518 12:00 AM] falls asleep
+[6/24/1518 12:28 AM] wakes up
+[6/24/1518 12:37 AM] falls asleep
+[6/24/1518 12:53 AM] wakes up
+[6/24/1518 11:56 PM] Guard #3319 begins shift
+[6/25/1518 12:28 AM] falls asleep
+[6/25/1518 12:53 AM] wakes up
+[6/25/1518 11:57 PM] Guard #2663 begins shift
+[6/26/1518 12:07 AM] falls asleep
+[6/26/1518 12:52 AM] wakes up
+[6/26/1518 11:56 PM] Guard #503 begins shift
+[6/27/1518 12:09 AM] falls asleep
+[6/27/1518 12:10 AM] wakes up
+[6/27/1518 11:57 PM] Guard #919 begins shift
+[6/28/1518 12:23 AM] falls asleep
+[6/28/1518 12:51 AM] wakes up
+[6/29/1518 12:00 AM] Guard #593 begins shift
+[6/30/1518 12:04 AM] Guard #853 begins shift
+[6/30/1518 12:12 AM] falls asleep
+[6/30/1518 12:20 AM] wakes up
+[6/30/1518 12:44 AM] falls asleep
+[6/30/1518 12:52 AM] wakes up
+[7/1/1518 12:00 AM] Guard #2917 begins shift
+[7/1/1518 12:17 AM] falls asleep
+[7/1/1518 12:26 AM] wakes up
+[7/1/1518 12:35 AM] falls asleep
+[7/1/1518 12:57 AM] wakes up
+[7/2/1518 12:00 AM] Guard #1093 begins shift
+[7/2/1518 12:07 AM] falls asleep
+[7/2/1518 12:16 AM] wakes up
+[7/2/1518 12:25 AM] falls asleep
+[7/2/1518 12:51 AM] wakes up
+[7/2/1518 11:58 PM] Guard #1801 begins shift
+[7/3/1518 12:18 AM] falls asleep
+[7/3/1518 12:58 AM] wakes up
+[7/4/1518 12:03 AM] Guard #1801 begins shift
+[7/4/1518 12:20 AM] falls asleep
+[7/4/1518 12:44 AM] wakes up
+[7/5/1518 12:03 AM] Guard #1741 begins shift
+[7/5/1518 12:15 AM] falls asleep
+[7/5/1518 12:27 AM] wakes up
+[7/5/1518 12:42 AM] falls asleep
+[7/5/1518 12:52 AM] wakes up
+[7/5/1518 11:57 PM] Guard #2917 begins shift
+[7/6/1518 12:27 AM] falls asleep
+[7/6/1518 12:59 AM] wakes up
+[7/7/1518 12:01 AM] Guard #2917 begins shift
+[7/7/1518 12:21 AM] falls asleep
+[7/7/1518 12:42 AM] wakes up
+[7/8/1518 12:02 AM] Guard #73 begins shift
+[7/8/1518 12:33 AM] falls asleep
+[7/8/1518 12:34 AM] wakes up
+[7/8/1518 12:39 AM] falls asleep
+[7/8/1518 12:47 AM] wakes up
+[7/8/1518 12:53 AM] falls asleep
+[7/8/1518 12:58 AM] wakes up
+[7/9/1518 12:00 AM] Guard #593 begins shift
+[7/9/1518 11:56 PM] Guard #1093 begins shift
+[7/10/1518 12:52 AM] falls asleep
+[7/10/1518 12:59 AM] wakes up
+[7/11/1518 12:04 AM] Guard #2111 begins shift
+[7/11/1518 12:21 AM] falls asleep
+[7/11/1518 12:29 AM] wakes up
+[7/11/1518 11:56 PM] Guard #1741 begins shift
+[7/12/1518 12:23 AM] falls asleep
+[7/12/1518 12:35 AM] wakes up
+[7/12/1518 12:41 AM] falls asleep
+[7/12/1518 12:47 AM] wakes up
+[7/13/1518 12:02 AM] Guard #2111 begins shift
+[7/13/1518 12:16 AM] falls asleep
+[7/13/1518 12:49 AM] wakes up
+[7/13/1518 11:50 PM] Guard #503 begins shift
+[7/14/1518 12:05 AM] falls asleep
+[7/14/1518 12:35 AM] wakes up
+[7/15/1518 12:01 AM] Guard #919 begins shift
+[7/15/1518 12:26 AM] falls asleep
+[7/15/1518 12:40 AM] wakes up
+[7/16/1518 12:03 AM] Guard #1907 begins shift
+[7/16/1518 12:36 AM] falls asleep
+[7/16/1518 12:39 AM] wakes up
+[7/17/1518 12:04 AM] Guard #3361 begins shift
+[7/17/1518 12:21 AM] falls asleep
+[7/17/1518 12:38 AM] wakes up
+[7/17/1518 12:43 AM] falls asleep
+[7/17/1518 12:56 AM] wakes up
+[7/18/1518 12:02 AM] Guard #1907 begins shift
+[7/18/1518 12:31 AM] falls asleep
+[7/18/1518 12:46 AM] wakes up
+[7/18/1518 11:57 PM] Guard #1741 begins shift
+[7/19/1518 12:24 AM] falls asleep
+[7/19/1518 12:51 AM] wakes up
+[7/19/1518 11:52 PM] Guard #503 begins shift
+[7/20/1518 12:01 AM] falls asleep
+[7/20/1518 12:22 AM] wakes up
+[7/20/1518 12:38 AM] falls asleep
+[7/20/1518 12:55 AM] wakes up
+[7/21/1518 12:00 AM] Guard #3319 begins shift
+[7/21/1518 12:19 AM] falls asleep
+[7/21/1518 12:51 AM] wakes up
+[7/21/1518 12:55 AM] falls asleep
+[7/21/1518 12:57 AM] wakes up
+[7/21/1518 11:58 PM] Guard #1093 begins shift
+[7/22/1518 12:11 AM] falls asleep
+[7/22/1518 12:44 AM] wakes up
+[7/22/1518 12:53 AM] falls asleep
+[7/22/1518 12:58 AM] wakes up
+[7/22/1518 11:57 PM] Guard #1801 begins shift
+[7/23/1518 12:13 AM] falls asleep
+[7/23/1518 12:39 AM] wakes up
+[7/23/1518 12:48 AM] falls asleep
+[7/23/1518 12:57 AM] wakes up
+[7/23/1518 11:58 PM] Guard #103 begins shift
+[7/24/1518 12:48 AM] falls asleep
+[7/24/1518 12:53 AM] wakes up
+[7/25/1518 12:00 AM] Guard #2887 begins shift
+[7/25/1518 12:29 AM] falls asleep
+[7/25/1518 12:40 AM] wakes up
+[7/26/1518 12:03 AM] Guard #709 begins shift
+[7/26/1518 12:24 AM] falls asleep
+[7/26/1518 12:40 AM] wakes up
+[7/26/1518 12:45 AM] falls asleep
+[7/26/1518 12:53 AM] wakes up
+[7/27/1518 12:00 AM] Guard #73 begins shift
+[7/27/1518 12:35 AM] falls asleep
+[7/27/1518 12:54 AM] wakes up
+[7/27/1518 11:57 PM] Guard #2963 begins shift
+[7/28/1518 12:06 AM] falls asleep
+[7/28/1518 12:49 AM] wakes up
+[7/28/1518 11:49 PM] Guard #1741 begins shift
+[7/29/1518 12:05 AM] falls asleep
+[7/29/1518 12:49 AM] wakes up
+[7/30/1518 12:03 AM] Guard #2917 begins shift
+[7/30/1518 12:13 AM] falls asleep
+[7/30/1518 12:56 AM] wakes up
+[7/30/1518 11:58 PM] Guard #2663 begins shift
+[7/31/1518 12:50 AM] falls asleep
+[7/31/1518 12:58 AM] wakes up
+[8/1/1518 12:01 AM] Guard #3361 begins shift
+[8/1/1518 12:14 AM] falls asleep
+[8/1/1518 12:53 AM] wakes up
+[8/2/1518 12:03 AM] Guard #1093 begins shift
+[8/2/1518 12:31 AM] falls asleep
+[8/2/1518 12:37 AM] wakes up
+[8/2/1518 12:40 AM] falls asleep
+[8/2/1518 12:46 AM] wakes up
+[8/2/1518 12:55 AM] falls asleep
+[8/2/1518 12:59 AM] wakes up
+[8/3/1518 12:00 AM] Guard #2843 begins shift
+[8/3/1518 12:21 AM] falls asleep
+[8/3/1518 12:55 AM] wakes up
+[8/3/1518 11:57 PM] Guard #2843 begins shift
+[8/4/1518 12:15 AM] falls asleep
+[8/4/1518 12:49 AM] wakes up
+[8/5/1518 12:01 AM] Guard #919 begins shift
+[8/5/1518 12:27 AM] falls asleep
+[8/5/1518 12:35 AM] wakes up
+[8/5/1518 11:58 PM] Guard #853 begins shift
+[8/6/1518 12:12 AM] falls asleep
+[8/6/1518 12:40 AM] wakes up
+[8/6/1518 12:46 AM] falls asleep
+[8/6/1518 12:59 AM] wakes up
+[8/7/1518 12:04 AM] Guard #3449 begins shift
+[8/8/1518 12:03 AM] Guard #2663 begins shift
+[8/8/1518 12:15 AM] falls asleep
+[8/8/1518 12:16 AM] wakes up
+[8/8/1518 12:23 AM] falls asleep
+[8/8/1518 12:51 AM] wakes up
+[8/8/1518 12:55 AM] falls asleep
+[8/8/1518 12:56 AM] wakes up
+[8/8/1518 11:59 PM] Guard #2789 begins shift
+[8/10/1518 12:00 AM] Guard #2887 begins shift
+[8/10/1518 12:28 AM] falls asleep
+[8/10/1518 12:34 AM] wakes up
+[8/11/1518 12:04 AM] Guard #1801 begins shift
+[8/11/1518 12:15 AM] falls asleep
+[8/11/1518 12:29 AM] wakes up
+[8/11/1518 12:38 AM] falls asleep
+[8/11/1518 12:47 AM] wakes up
+[8/12/1518 12:01 AM] Guard #2111 begins shift
+[8/12/1518 12:36 AM] falls asleep
+[8/12/1518 12:47 AM] wakes up
+[8/13/1518 12:00 AM] Guard #1741 begins shift
+[8/13/1518 12:52 AM] falls asleep
+[8/13/1518 12:53 AM] wakes up
+[8/14/1518 12:02 AM] Guard #503 begins shift
+[8/14/1518 12:09 AM] falls asleep
+[8/14/1518 12:11 AM] wakes up
+[8/14/1518 12:26 AM] falls asleep
+[8/14/1518 12:34 AM] wakes up
+[8/14/1518 12:46 AM] falls asleep
+[8/14/1518 12:56 AM] wakes up
+[8/14/1518 11:58 PM] Guard #73 begins shift
+[8/15/1518 12:30 AM] falls asleep
+[8/15/1518 12:39 AM] wakes up
+[8/15/1518 12:47 AM] falls asleep
+[8/15/1518 12:49 AM] wakes up
+[8/16/1518 12:02 AM] Guard #2663 begins shift
+[8/16/1518 12:07 AM] falls asleep
+[8/16/1518 12:37 AM] wakes up
+[8/17/1518 12:03 AM] Guard #503 begins shift
+[8/17/1518 12:14 AM] falls asleep
+[8/17/1518 12:24 AM] wakes up
+[8/17/1518 12:54 AM] falls asleep
+[8/17/1518 12:58 AM] wakes up
+[8/18/1518 12:00 AM] Guard #1801 begins shift
+[8/18/1518 12:27 AM] falls asleep
+[8/18/1518 12:45 AM] wakes up
+[8/18/1518 12:54 AM] falls asleep
+[8/18/1518 12:56 AM] wakes up
+[8/18/1518 11:51 PM] Guard #103 begins shift
+[8/19/1518 12:05 AM] falls asleep
+[8/19/1518 12:46 AM] wakes up
+[8/20/1518 12:00 AM] Guard #2663 begins shift
+[8/20/1518 12:30 AM] falls asleep
+[8/20/1518 12:52 AM] wakes up
+[8/20/1518 12:57 AM] falls asleep
+[8/20/1518 12:59 AM] wakes up
+[8/21/1518 12:01 AM] Guard #2887 begins shift
+[8/21/1518 12:24 AM] falls asleep
+[8/21/1518 12:36 AM] wakes up
+[8/22/1518 12:01 AM] Guard #1907 begins shift
+[8/22/1518 12:16 AM] falls asleep
+[8/22/1518 12:44 AM] wakes up
+[8/22/1518 12:50 AM] falls asleep
+[8/22/1518 12:51 AM] wakes up
+[8/22/1518 11:59 PM] Guard #3361 begins shift
+[8/23/1518 12:26 AM] falls asleep
+[8/23/1518 12:27 AM] wakes up
+[8/23/1518 12:41 AM] falls asleep
+[8/23/1518 12:55 AM] wakes up
+[8/24/1518 12:00 AM] Guard #2663 begins shift
+[8/24/1518 12:23 AM] falls asleep
+[8/24/1518 12:30 AM] wakes up
+[8/24/1518 12:37 AM] falls asleep
+[8/24/1518 12:42 AM] wakes up
+[8/24/1518 11:52 PM] Guard #503 begins shift
+[8/25/1518 12:02 AM] falls asleep
+[8/25/1518 12:33 AM] wakes up
+[8/25/1518 12:40 AM] falls asleep
+[8/25/1518 12:43 AM] wakes up
+[8/25/1518 12:49 AM] falls asleep
+[8/25/1518 12:57 AM] wakes up
+[8/25/1518 11:53 PM] Guard #2917 begins shift
+[8/26/1518 12:02 AM] falls asleep
+[8/26/1518 12:18 AM] wakes up
+[8/26/1518 12:25 AM] falls asleep
+[8/26/1518 12:38 AM] wakes up
+[8/27/1518 12:03 AM] Guard #2843 begins shift
+[8/27/1518 12:45 AM] falls asleep
+[8/27/1518 12:47 AM] wakes up
+[8/28/1518 12:01 AM] Guard #1741 begins shift
+[8/28/1518 12:18 AM] falls asleep
+[8/28/1518 12:58 AM] wakes up
+[8/28/1518 11:56 PM] Guard #2083 begins shift
+[8/29/1518 12:14 AM] falls asleep
+[8/29/1518 12:54 AM] wakes up
+[8/29/1518 12:57 AM] falls asleep
+[8/29/1518 12:58 AM] wakes up
+[8/30/1518 12:00 AM] Guard #1801 begins shift
+[8/30/1518 12:15 AM] falls asleep
+[8/30/1518 12:42 AM] wakes up
+[8/31/1518 12:02 AM] Guard #3361 begins shift
+[8/31/1518 12:30 AM] falls asleep
+[8/31/1518 12:52 AM] wakes up
+[8/31/1518 12:57 AM] falls asleep
+[8/31/1518 12:59 AM] wakes up
+[8/31/1518 11:59 PM] Guard #1801 begins shift
+[9/1/1518 12:31 AM] falls asleep
+[9/1/1518 12:48 AM] wakes up
+[9/1/1518 12:52 AM] falls asleep
+[9/1/1518 12:58 AM] wakes up
+[9/1/1518 11:58 PM] Guard #3319 begins shift
+[9/2/1518 12:43 AM] falls asleep
+[9/2/1518 12:53 AM] wakes up
+[9/2/1518 11:57 PM] Guard #2663 begins shift
+[9/3/1518 12:28 AM] falls asleep
+[9/3/1518 12:45 AM] wakes up
+[9/3/1518 12:49 AM] falls asleep
+[9/3/1518 12:58 AM] wakes up
+[9/4/1518 12:04 AM] Guard #2917 begins shift
+[9/4/1518 12:11 AM] falls asleep
+[9/4/1518 12:29 AM] wakes up
+[9/4/1518 12:33 AM] falls asleep
+[9/4/1518 12:36 AM] wakes up
+[9/5/1518 12:01 AM] Guard #2083 begins shift
+[9/5/1518 12:42 AM] falls asleep
+[9/5/1518 12:44 AM] wakes up
+[9/5/1518 12:48 AM] falls asleep
+[9/5/1518 12:52 AM] wakes up
+[9/6/1518 12:04 AM] Guard #2083 begins shift
+[9/6/1518 12:06 AM] falls asleep
+[9/6/1518 12:47 AM] wakes up
+[9/6/1518 11:57 PM] Guard #73 begins shift
+[9/7/1518 12:16 AM] falls asleep
+[9/7/1518 12:46 AM] wakes up
+[9/8/1518 12:04 AM] Guard #1801 begins shift
+[9/8/1518 12:34 AM] falls asleep
+[9/8/1518 12:56 AM] wakes up
+[9/9/1518 12:01 AM] Guard #2663 begins shift
+[9/9/1518 12:07 AM] falls asleep
+[9/9/1518 12:11 AM] wakes up
+[9/9/1518 12:32 AM] falls asleep
+[9/9/1518 12:50 AM] wakes up
+[9/9/1518 11:48 PM] Guard #1741 begins shift
+[9/10/1518 12:05 AM] falls asleep
+[9/10/1518 12:25 AM] wakes up
+[9/10/1518 12:39 AM] falls asleep
+[9/10/1518 12:41 AM] wakes up
+[9/11/1518 12:00 AM] Guard #2843 begins shift
+[9/11/1518 12:25 AM] falls asleep
+[9/11/1518 12:47 AM] wakes up
+[9/11/1518 11:56 PM] Guard #1907 begins shift
+[9/12/1518 12:19 AM] falls asleep
+[9/12/1518 12:48 AM] wakes up
+[9/12/1518 11:58 PM] Guard #2111 begins shift
+[9/13/1518 12:23 AM] falls asleep
+[9/13/1518 12:40 AM] wakes up
+[9/14/1518 12:04 AM] Guard #853 begins shift
+[9/14/1518 12:25 AM] falls asleep
+[9/14/1518 12:43 AM] wakes up
+[9/14/1518 12:46 AM] falls asleep
+[9/14/1518 12:49 AM] wakes up
+[9/15/1518 12:01 AM] Guard #103 begins shift
+[9/15/1518 12:16 AM] falls asleep
+[9/15/1518 12:24 AM] wakes up
+[9/15/1518 12:33 AM] falls asleep
+[9/15/1518 12:56 AM] wakes up
+[9/15/1518 11:58 PM] Guard #151 begins shift
+[9/16/1518 12:21 AM] falls asleep
+[9/16/1518 12:49 AM] wakes up
+[9/16/1518 11:50 PM] Guard #2083 begins shift
+[9/17/1518 12:05 AM] falls asleep
+[9/17/1518 12:33 AM] wakes up
+[9/17/1518 12:37 AM] falls asleep
+[9/17/1518 12:53 AM] wakes up
+[9/18/1518 12:02 AM] Guard #593 begins shift
+[9/18/1518 11:56 PM] Guard #2843 begins shift
+[9/19/1518 12:40 AM] falls asleep
+[9/19/1518 12:45 AM] wakes up
+[9/19/1518 12:50 AM] falls asleep
+[9/19/1518 12:54 AM] wakes up
+[9/19/1518 11:51 PM] Guard #2963 begins shift
+[9/20/1518 12:02 AM] falls asleep
+[9/20/1518 12:12 AM] wakes up
+[9/20/1518 12:19 AM] falls asleep
+[9/20/1518 12:53 AM] wakes up
+[9/20/1518 11:52 PM] Guard #2663 begins shift
+[9/21/1518 12:01 AM] falls asleep
+[9/21/1518 12:24 AM] wakes up
+[9/22/1518 12:00 AM] Guard #503 begins shift
+[9/22/1518 12:07 AM] falls asleep
+[9/22/1518 12:31 AM] wakes up
+[9/23/1518 12:03 AM] Guard #1741 begins shift
+[9/23/1518 12:24 AM] falls asleep
+[9/23/1518 12:55 AM] wakes up
+[9/23/1518 11:59 PM] Guard #2663 begins shift
+[9/24/1518 12:57 AM] falls asleep
+[9/24/1518 12:59 AM] wakes up
+[9/24/1518 11:59 PM] Guard #2083 begins shift
+[9/25/1518 12:35 AM] falls asleep
+[9/25/1518 12:43 AM] wakes up
+[9/26/1518 12:02 AM] Guard #2843 begins shift
+[9/26/1518 12:30 AM] falls asleep
+[9/26/1518 12:48 AM] wakes up
+[9/26/1518 12:51 AM] falls asleep
+[9/26/1518 12:52 AM] wakes up
+[9/26/1518 12:57 AM] falls asleep
+[9/26/1518 12:58 AM] wakes up
+[9/27/1518 12:01 AM] Guard #2111 begins shift
+[9/27/1518 12:16 AM] falls asleep
+[9/27/1518 12:36 AM] wakes up
+[9/27/1518 11:47 PM] Guard #709 begins shift
+[9/28/1518 12:00 AM] falls asleep
+[9/28/1518 12:36 AM] wakes up
+[9/28/1518 12:40 AM] falls asleep
+[9/28/1518 12:51 AM] wakes up
+[9/29/1518 12:00 AM] Guard #2887 begins shift
+[9/29/1518 12:15 AM] falls asleep
+[9/29/1518 12:23 AM] wakes up
+[9/29/1518 12:30 AM] falls asleep
+[9/29/1518 12:33 AM] wakes up
+[9/29/1518 12:43 AM] falls asleep
+[9/29/1518 12:46 AM] wakes up
+[9/29/1518 11:57 PM] Guard #1093 begins shift
+[9/30/1518 12:32 AM] falls asleep
+[9/30/1518 12:48 AM] wakes up
+[10/1/1518 12:01 AM] Guard #2963 begins shift
+[10/1/1518 12:56 AM] falls asleep
+[10/1/1518 12:57 AM] wakes up
+[10/2/1518 12:03 AM] Guard #73 begins shift
+[10/2/1518 12:18 AM] falls asleep
+[10/2/1518 12:51 AM] wakes up
+[10/2/1518 11:58 PM] Guard #103 begins shift
+[10/3/1518 12:43 AM] falls asleep
+[10/3/1518 12:53 AM] wakes up
+[10/3/1518 12:56 AM] falls asleep
+[10/3/1518 12:58 AM] wakes up
+[10/3/1518 11:58 PM] Guard #2963 begins shift
+[10/4/1518 12:17 AM] falls asleep
+[10/4/1518 12:29 AM] wakes up
+[10/4/1518 12:40 AM] falls asleep
+[10/4/1518 12:48 AM] wakes up
+[10/4/1518 11:59 PM] Guard #709 begins shift
+[10/5/1518 12:07 AM] falls asleep
+[10/5/1518 12:09 AM] wakes up
+[10/6/1518 12:00 AM] Guard #73 begins shift
+[10/6/1518 12:32 AM] falls asleep
+[10/6/1518 12:46 AM] wakes up
+[10/7/1518 12:00 AM] Guard #1907 begins shift
+[10/7/1518 12:27 AM] falls asleep
+[10/7/1518 12:56 AM] wakes up
+[10/7/1518 11:52 PM] Guard #1741 begins shift
+[10/8/1518 12:00 AM] falls asleep
+[10/8/1518 12:30 AM] wakes up
+[10/8/1518 12:37 AM] falls asleep
+[10/8/1518 12:53 AM] wakes up
+[10/9/1518 12:00 AM] Guard #709 begins shift
+[10/9/1518 12:31 AM] falls asleep
+[10/9/1518 12:42 AM] wakes up
+[10/9/1518 12:48 AM] falls asleep
+[10/9/1518 12:53 AM] wakes up
+[10/10/1518 12:04 AM] Guard #2963 begins shift
+[10/10/1518 12:24 AM] falls asleep
+[10/10/1518 12:58 AM] wakes up
+[10/10/1518 11:49 PM] Guard #2917 begins shift
+[10/11/1518 12:01 AM] falls asleep
+[10/11/1518 12:55 AM] wakes up
+[10/11/1518 11:58 PM] Guard #3361 begins shift
+[10/12/1518 12:13 AM] falls asleep
+[10/12/1518 12:47 AM] wakes up
+[10/12/1518 11:56 PM] Guard #2663 begins shift
+[10/13/1518 12:11 AM] falls asleep
+[10/13/1518 12:40 AM] wakes up
+[10/13/1518 11:51 PM] Guard #3319 begins shift
+[10/14/1518 12:01 AM] falls asleep
+[10/14/1518 12:33 AM] wakes up
+[10/14/1518 12:44 AM] falls asleep
+[10/14/1518 12:55 AM] wakes up
+[10/14/1518 11:49 PM] Guard #73 begins shift
+[10/15/1518 12:05 AM] falls asleep
+[10/15/1518 12:48 AM] wakes up
+[10/16/1518 12:02 AM] Guard #1741 begins shift
+[10/16/1518 12:13 AM] falls asleep
+[10/16/1518 12:37 AM] wakes up
+[10/16/1518 11:50 PM] Guard #853 begins shift
+[10/17/1518 12:00 AM] falls asleep
+[10/17/1518 12:46 AM] wakes up
+[10/17/1518 12:54 AM] falls asleep
+[10/17/1518 12:58 AM] wakes up
+[10/17/1518 11:59 PM] Guard #3361 begins shift
+[10/18/1518 12:36 AM] falls asleep
+[10/18/1518 12:42 AM] wakes up
+[10/18/1518 12:46 AM] falls asleep
+[10/18/1518 12:59 AM] wakes up
+[10/19/1518 12:01 AM] Guard #103 begins shift
+[10/19/1518 12:27 AM] falls asleep
+[10/19/1518 12:52 AM] wakes up
+[10/19/1518 11:58 PM] Guard #2843 begins shift
+[10/20/1518 12:42 AM] falls asleep
+[10/20/1518 12:59 AM] wakes up
+[10/20/1518 11:50 PM] Guard #1801 begins shift
+[10/21/1518 12:05 AM] falls asleep
+[10/21/1518 12:08 AM] wakes up
+[10/21/1518 12:17 AM] falls asleep
+[10/21/1518 12:49 AM] wakes up
+[10/21/1518 11:59 PM] Guard #1801 begins shift
+[10/22/1518 12:13 AM] falls asleep
+[10/22/1518 12:28 AM] wakes up
+[10/22/1518 11:58 PM] Guard #2963 begins shift
+[10/23/1518 12:08 AM] falls asleep
+[10/23/1518 12:40 AM] wakes up
+[10/23/1518 11:53 PM] Guard #3361 begins shift
+[10/24/1518 12:04 AM] falls asleep
+[10/24/1518 12:59 AM] wakes up
+[10/25/1518 12:04 AM] Guard #2843 begins shift
+[10/25/1518 12:47 AM] falls asleep
+[10/25/1518 12:49 AM] wakes up
+[10/26/1518 12:00 AM] Guard #1093 begins shift
+[10/26/1518 12:06 AM] falls asleep
+[10/26/1518 12:31 AM] wakes up
+[10/26/1518 12:37 AM] falls asleep
+[10/26/1518 12:53 AM] wakes up
+[10/26/1518 11:56 PM] Guard #919 begins shift
+[10/27/1518 12:30 AM] falls asleep
+[10/27/1518 12:42 AM] wakes up
+[10/28/1518 12:00 AM] Guard #73 begins shift
+[10/28/1518 12:34 AM] falls asleep
+[10/28/1518 12:49 AM] wakes up
+[10/29/1518 12:00 AM] Guard #2843 begins shift
+[10/29/1518 12:08 AM] falls asleep
+[10/29/1518 12:20 AM] wakes up
+[10/29/1518 12:46 AM] falls asleep
+[10/29/1518 12:58 AM] wakes up
+[10/30/1518 12:01 AM] Guard #3361 begins shift
+[10/30/1518 12:11 AM] falls asleep
+[10/30/1518 12:32 AM] wakes up
+[10/30/1518 12:42 AM] falls asleep
+[10/30/1518 12:47 AM] wakes up
+[10/30/1518 12:53 AM] falls asleep
+[10/30/1518 12:58 AM] wakes up
+[10/31/1518 12:00 AM] Guard #1907 begins shift
+[10/31/1518 12:12 AM] falls asleep
+[10/31/1518 12:53 AM] wakes up
+[11/1/1518 12:00 AM] Guard #2917 begins shift
+[11/1/1518 12:13 AM] falls asleep
+[11/1/1518 12:41 AM] wakes up
+[11/2/1518 12:03 AM] Guard #151 begins shift
+[11/2/1518 12:18 AM] falls asleep
+[11/2/1518 12:43 AM] wakes up
+[11/2/1518 12:47 AM] falls asleep
+[11/2/1518 12:51 AM] wakes up
+[11/2/1518 12:57 AM] falls asleep
+[11/2/1518 12:58 AM] wakes up
+[11/3/1518 12:01 AM] Guard #1907 begins shift
+[11/3/1518 12:25 AM] falls asleep
+[11/3/1518 12:32 AM] wakes up
+[11/4/1518 12:00 AM] Guard #709 begins shift
+[11/4/1518 12:49 AM] falls asleep
+[11/4/1518 12:58 AM] wakes up
+[11/5/1518 12:01 AM] Guard #1741 begins shift
+[11/5/1518 12:17 AM] falls asleep
+[11/5/1518 12:36 AM] wakes up
+[11/5/1518 12:50 AM] falls asleep
+[11/5/1518 12:59 AM] wakes up
+[11/6/1518 12:00 AM] Guard #2843 begins shift
+[11/6/1518 12:39 AM] falls asleep
+[11/6/1518 12:54 AM] wakes up
+[11/7/1518 12:00 AM] Guard #1741 begins shift
+[11/7/1518 12:23 AM] falls asleep
+[11/7/1518 12:35 AM] wakes up
+[11/7/1518 12:41 AM] falls asleep
+[11/7/1518 12:56 AM] wakes up
+[11/7/1518 11:58 PM] Guard #709 begins shift
+[11/8/1518 12:25 AM] falls asleep
+[11/8/1518 12:26 AM] wakes up
+[11/8/1518 12:40 AM] falls asleep
+[11/8/1518 12:41 AM] wakes up
+[11/8/1518 12:46 AM] falls asleep
+[11/8/1518 12:47 AM] wakes up
+[11/8/1518 12:52 AM] falls asleep
+[11/8/1518 12:56 AM] wakes up
+[11/8/1518 11:54 PM] Guard #2111 begins shift
+[11/9/1518 12:01 AM] falls asleep
+[11/9/1518 12:11 AM] wakes up
+[11/9/1518 12:31 AM] falls asleep
+[11/9/1518 12:56 AM] wakes up
+[11/9/1518 11:58 PM] Guard #853 begins shift
+[11/10/1518 12:43 AM] falls asleep
+[11/10/1518 12:47 AM] wakes up
+[11/11/1518 12:01 AM] Guard #3361 begins shift
+[11/11/1518 12:24 AM] falls asleep
+[11/11/1518 12:49 AM] wakes up
+[11/11/1518 11:58 PM] Guard #709 begins shift
+[11/12/1518 12:42 AM] falls asleep
+[11/12/1518 12:47 AM] wakes up
+[11/12/1518 12:51 AM] falls asleep
+[11/12/1518 12:53 AM] wakes up
+[11/13/1518 12:00 AM] Guard #1907 begins shift
+[11/13/1518 12:16 AM] falls asleep
+[11/13/1518 12:22 AM] wakes up
+[11/13/1518 12:49 AM] falls asleep
+[11/13/1518 12:50 AM] wakes up
+[11/13/1518 11:50 PM] Guard #709 begins shift
+[11/14/1518 12:03 AM] falls asleep
+[11/14/1518 12:16 AM] wakes up
+[11/14/1518 12:25 AM] falls asleep
+[11/14/1518 12:57 AM] wakes up
+[11/14/1518 11:58 PM] Guard #853 begins shift
+[11/15/1518 12:32 AM] falls asleep
+[11/15/1518 12:41 AM] wakes up
+[11/16/1518 12:00 AM] Guard #593 begins shift
+[11/16/1518 11:57 PM] Guard #2843 begins shift
+[11/17/1518 12:15 AM] falls asleep
+[11/17/1518 12:50 AM] wakes up
+[11/17/1518 11:53 PM] Guard #853 begins shift
+[11/18/1518 12:03 AM] falls asleep
+[11/18/1518 12:40 AM] wakes up
+[11/18/1518 12:44 AM] falls asleep
+[11/18/1518 12:57 AM] wakes up
+[11/19/1518 12:04 AM] Guard #1093 begins shift
+[11/19/1518 12:34 AM] falls asleep
+[11/19/1518 12:55 AM] wakes up
+[11/20/1518 12:00 AM] Guard #853 begins shift
+[11/20/1518 12:37 AM] falls asleep
+[11/20/1518 12:43 AM] wakes up
+[11/20/1518 12:53 AM] falls asleep
+[11/20/1518 12:59 AM] wakes up
+[11/21/1518 12:02 AM] Guard #919 begins shift
+[11/21/1518 12:21 AM] falls asleep
+[11/21/1518 12:41 AM] wakes up
+[11/21/1518 12:44 AM] falls asleep
+[11/21/1518 12:46 AM] wakes up
+[11/21/1518 11:59 PM] Guard #919 begins shift
+[11/22/1518 12:37 AM] falls asleep
+[11/22/1518 12:44 AM] wakes up
+[11/22/1518 12:56 AM] falls asleep
+[11/22/1518 12:57 AM] wakes up
+[11/23/1518 12:04 AM] Guard #2843 begins shift
+[11/23/1518 12:07 AM] falls asleep
+[11/23/1518 12:37 AM] wakes up
