@@ -32,20 +32,12 @@ namespace _04b
             }
 
             inputDataLines.Sort((sh1, sh2) => sh1.Date.CompareTo(sh2.Date));
-            foreach(var item in inputDataLines){
-                if (item.StatusCode == 1) 
-                    Console.WriteLine($"[{item.Date.ToShortDateString()} {item.Date.ToShortTimeString()}] Guard #{item.GuardID} begins shift");
-                else if (item.StatusCode == 2)
-                    Console.WriteLine($"[{item.Date.ToShortDateString()} {item.Date.ToShortTimeString()}] falls asleep");
-                else if (item.StatusCode == 4)
-                    Console.WriteLine($"[{item.Date.ToShortDateString()} {item.Date.ToShortTimeString()}] wakes up");
-            }
             var result = GetTimeShiftDetails(inputDataLines);
-            
+
             var minuteMostAsleep = result.Key;
             var guardId = result.Value;
 
-            Console.WriteLine($"The minute when guards are most aleep is: {minuteMostAsleep}");
+            Console.WriteLine($"The minute when guards are most asleep is: {minuteMostAsleep}");
             Console.WriteLine($"The most sleeping guard sleeping in that minute: {guardId}");
             Console.WriteLine($"What is the ID of the guard you chose multiplied by the minute you chose?: {guardId * minuteMostAsleep}");
 
@@ -53,29 +45,29 @@ namespace _04b
             Console.WriteLine($"Stopwatch stops: {sw.Elapsed.TotalSeconds}");
         }
 
-        private static KeyValuePair<int, int> GetTimeShiftDetails(List<Shift> shifts) {
+        private static KeyValuePair<int, int> GetTimeShiftDetails(List<Shift> shifts)
+        {
             var guardDict = new Dictionary<int, List<int>>();
-            for(int i = 0; i < 60; i++)
+            for (int i = 0; i < 60; i++)
                 guardDict.Add(i, new List<int>());
 
             DateTime sleepStart = DateTime.MinValue;
             int guardId = 0;
 
-            foreach(var shift in shifts) {
-                switch (shift.StatusCode) {
-                    case 1 :
+            foreach (var shift in shifts)
+            {
+                switch (shift.StatusCode)
+                {
+                    case 1:
                         guardId = shift.GuardID;
                         break;
-                    case 2 : // falls asleep 
+                    case 2: // falls asleep 
                         sleepStart = shift.Date;
                         break;
-                    case 4 : // wakes up 
+                    case 4: // wakes up 
 
-                        if (sleepStart.DayOfYear < shift.Date.DayOfYear) {
-                            Console.WriteLine($"{sleepStart} > {shift.Date.TimeOfDay}");
-                        }
-
-                        for(var ts= sleepStart.TimeOfDay; ts < shift.Date.TimeOfDay; ts=ts.Add(new TimeSpan(0, 1, 0))) {
+                        for (var ts = sleepStart.TimeOfDay; ts < shift.Date.TimeOfDay; ts = ts.Add(new TimeSpan(0, 1, 0)))
+                        {
                             guardDict[ts.Minutes].Add(guardId);
                         }
 
@@ -84,22 +76,29 @@ namespace _04b
                 }
             }
 
-            Tuple<int, int> temp = new Tuple<int, int>(0,0);
+            //item1 - minute, item2 - guardId, item3 - guard on minute count
+            Tuple<int, int, int> temp = new Tuple<int, int, int>(0, 0, 0);
 
-            foreach(var item in guardDict) {
-                if (item.Value.Count > temp.Item2) {
-                    temp = new Tuple<int, int>(item.Key, item.Value.Count);
+            foreach (var item in guardDict)
+            {
+                if (item.Value.Count > 0)
+                {
+                    var groupQuery = from g in item.Value
+                                     group g by g;
+
+                    var groupCountedQuery = from g in groupQuery
+                                            select new { GuardId = g.Key, Count = g.Count() };
+
+                    var mostCountedGuard = groupCountedQuery.OrderByDescending(el => el.Count).First();
+
+                    if (mostCountedGuard.Count > temp.Item3)
+                    {
+                        temp = new Tuple<int, int, int>(item.Key, mostCountedGuard.GuardId, mostCountedGuard.Count);
+                    }
                 }
             }
-            var mostAsleepMinute = temp.Item1;
 
-            var mostSleepingGuard = from x in guardDict[mostAsleepMinute]
-                                    group x by x into g
-                                    let count = g.Count()
-                                    orderby count descending
-                                    select new {Value = g.Key, Count = count};
-
-            return new KeyValuePair<int, int> (mostAsleepMinute, mostSleepingGuard.ToList()[0].Value);
+            return new KeyValuePair<int, int>(temp.Item1, temp.Item2);
         }
         private static Shift LineToShift(string line)
         {
