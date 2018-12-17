@@ -17,22 +17,22 @@ namespace _06a
             sw.Start();
             Console.WriteLine($"StopWatch started.");
 
-            List<MyPoint> pointsSet = ReadInputFile("input.txt");
+            HashSet<MyPoint> pointsSet = ReadInputFile("input.txt");
             Grid grid = MeasureArea(pointsSet);
             ArrangeGrid(grid);
             PopulateGrid(grid, pointsSet);
 
-            PrintGrid(grid);
-            Console.WriteLine($"The size of the largest area is 17");
+            // PrintGrid(grid);
+            Console.WriteLine($"The size of the largest area is {grid.GetLargestArea()}");
             sw.Stop();
             Console.WriteLine($"Stopwatch stops: {sw.Elapsed.TotalSeconds}");
         }
 
-        private static void PopulateGrid(Grid grid, List<MyPoint> pointsSet)
+        private static void PopulateGrid(Grid grid, HashSet<MyPoint> pointsSet)
         {
             foreach (var point in pointsSet) 
             {
-                grid.Cells[grid.GetCellIndex(point.X, point.Y)] = point;
+                grid.AddCell(point);
                 CalculateDistanceForCell(point.X, point.Y, point.GetSymbol().ToLower(), grid);
                 Console.WriteLine($"The point {point.GetSymbol()} is done");
             }
@@ -40,9 +40,9 @@ namespace _06a
 
         private static void CalculateDistanceForCell(int originX, int originY, string symbol, Grid grid)
         {
-            for (int y = 1; y <= grid.Height; y++)
+            Parallel.For(1, grid.Height, (y) =>
             {
-                for (int x = 1; x <= grid.Width; x++)
+                Parallel.For(1, grid.Width, (x) =>
                 {
                     MyPoint cell = grid.GetCell(x, y);
                     if (!cell.IsMasterPoint) {
@@ -56,8 +56,8 @@ namespace _06a
                         // PrintGrid(grid);
                         // System.Threading.Thread.Sleep(100);
                     }
-                }
-            }
+                });
+            });
         }
 
         private static void PrintGrid(Grid grid)
@@ -86,16 +86,14 @@ namespace _06a
 
         private static void ArrangeGrid(Grid grid)
         {
-            grid.Cells = new List<MyPoint>();
-
             for (int y = 1; y <= grid.Height; y++)
                 for (int x = 1; x <= grid.Width; x++)
-                    grid.Cells.Add(new MyPoint(x, y));
+                    grid.AddCell(new MyPoint(x, y));
         }
 
-        private static List<MyPoint> ReadInputFile(string inputFilePath)
+        private static HashSet<MyPoint> ReadInputFile(string inputFilePath)
         {
-            List<MyPoint> pointsSet = new List<MyPoint>();
+            HashSet<MyPoint> pointsSet = new HashSet<MyPoint>();
 
             using (var stream = File.OpenRead(inputFilePath))
             {
@@ -116,7 +114,7 @@ namespace _06a
             return pointsSet;
         }
 
-        private static Grid MeasureArea(List<MyPoint> points)
+        private static Grid MeasureArea(HashSet<MyPoint> points)
         {
             Grid grid = new Grid();
 
@@ -135,7 +133,7 @@ namespace _06a
 
 public class Grid
 {
-    public List<MyPoint> Cells { get; set; }
+    private Dictionary<string, MyPoint> CellsSet { get; set; }
     public int X { get; }
     public int Y { get; }
     public int Width { get; set; }
@@ -143,22 +141,34 @@ public class Grid
     public Grid()
     {
         this.X = this.Y = 0;
-        this.Cells = new List<MyPoint>();
-    }
-
-    public int GetCellIndex(int x, int y)
-    {
-        int cellIndex = this.Cells.FindIndex(p => p.X == x && p.Y == y);
-        return cellIndex;
+        this.CellsSet = new Dictionary<string, MyPoint>();
     }
 
     public MyPoint GetCell(int x, int y)
+    {       
+        string keyText = $"{x}:{y}";
+        return this.CellsSet[keyText];
+    }
+
+    
+    public Tuple<string, int> GetLargestArea() {
+        var query = this.CellsSet.GroupBy(c => c.Value.GetSymbol().ToLower())
+                  .Select(group => new {
+                      Symbol = group.Key,
+                      Count = group.Count()
+                  })
+                  .OrderByDescending(x => x.Count);
+        
+        return new Tuple<string, int>(query.First().Symbol, query.First().Count);
+    }
+
+    public void AddCell(MyPoint point)
     {
-        int index = this.GetCellIndex(x, y);
-        if (index == -1)
-            return null;
+        string keyText = $"{point.X}:{point.Y}";
+        if (this.CellsSet.ContainsKey(keyText))
+            this.CellsSet[keyText] = point;
         else
-            return this.Cells[index];
+            this.CellsSet.Add(keyText, point);
     }
 }
 
