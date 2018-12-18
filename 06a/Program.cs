@@ -122,8 +122,12 @@ namespace _06a
             {
                 if (point.X > grid.Width)
                     grid.Width = point.X;
+                else if (grid.X == -1 || point.X < grid.X)
+                    grid.X = point.X;
                 if (point.Y > grid.Height)
                     grid.Height = point.Y;
+                else if (grid.Y == -1 || point.Y < grid.Y)
+                    grid.Y = point.Y;
             }
 
             return grid;
@@ -134,13 +138,13 @@ namespace _06a
 public class Grid
 {
     private Dictionary<string, MyPoint> CellsSet { get; set; }
-    public int X { get; }
-    public int Y { get; }
+    public int X { get; set; }
+    public int Y { get; set; }
     public int Width { get; set; }
     public int Height { get; set; }
     public Grid()
     {
-        this.X = this.Y = 0;
+        this.X = this.Y = -1;
         this.CellsSet = new Dictionary<string, MyPoint>();
     }
 
@@ -152,14 +156,27 @@ public class Grid
 
     
     public Tuple<string, int> GetLargestArea() {
-        var query = this.CellsSet.GroupBy(c => c.Value.GetSymbol().ToLower())
-                  .Select(group => new {
-                      Symbol = group.Key,
-                      Count = group.Count()
-                  })
-                  .OrderByDescending(x => x.Count);
+        var finitiveNamesQuery = this.CellsSet
+                            .Where(c => !isInfinitive(c.Value))
+                            .Select(c => c.Value.GetSymbol().ToLower())
+                            .Distinct();
+
+        var query = this.CellsSet
+                    .Where(c => finitiveNamesQuery.Contains(c.Value.GetSymbol().ToLower()))
+                    .GroupBy(c => c.Value.GetSymbol().ToLower())
+                    .Select(group => new {
+                        Symbol = group.Key,
+                        Count = group.Count()
+                    })
+                    .OrderByDescending(x => x.Count);
         
         return new Tuple<string, int>(query.First().Symbol, query.First().Count);
+    }
+
+    private bool isInfinitive(MyPoint point) {
+        bool isMaster = point.IsMasterPoint;
+        bool result = point.IsMasterPoint && (point.X == this.X || point.X == this.Width || point.Y == this.Y || point.Y == this.Height);
+        return result;
     }
 
     public void AddCell(MyPoint point)
