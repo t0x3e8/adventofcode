@@ -21,74 +21,15 @@ namespace _06b
             Grid grid = MeasureArea(pointsSet);
             ArrangeGrid(grid);
             PopulateGrid(grid, pointsSet);
+            CalculateDistanceForCell(grid);
 
-            // PrintGrid(grid);
-            Console.WriteLine($"The size of the largest area is {grid.GetLargestArea()}");
+            PrintGrid(grid);
+            Console.WriteLine($"the size of the region containing all locations which have a total distance to all given coordinates of less than 10000 is: {grid.GetSizeOfRegion()}");
             sw.Stop();
             Console.WriteLine($"Stopwatch stops: {sw.Elapsed.TotalSeconds}");
         }
 
-        private static void PopulateGrid(Grid grid, HashSet<MyPoint> pointsSet)
-        {
-            foreach (var point in pointsSet) 
-            {
-                grid.AddCell(point);
-                CalculateDistanceForCell(point.X, point.Y, point.GetSymbol().ToLower(), grid);
-                Console.WriteLine($"The point {point.GetSymbol()} is done");
-            }
-        }
-
-        private static void CalculateDistanceForCell(int originX, int originY, string symbol, Grid grid)
-        {
-            for(int y = 1; y <= grid.Height; y++)
-            {
-				for(int x = 1; x <= grid.Width; x++) {
-					MyPoint cell = grid.GetCell(x, y);
-
-					if (!cell.IsMasterPoint) {
-						int dx = Math.Abs(x - originX);
-						int dy = Math.Abs(y - originY);
-						int distance = dx + dy;
-
-    					cell.AddSymbolDistance(symbol, distance);
-					}
-
-				}
-            }
-        }
-
-        private static void PrintGrid(Grid grid)
-        {
-            try
-            {
-                Console.Clear();
-            }
-            catch { }
-
-            for (int y = 1; y <= grid.Height; y++)
-            {
-                for (int x = 1; x <= grid.Width; x++)
-                {
-                    string cellText = grid.GetCell(x, y).GetSymbol();
-                    Console.Write(cellText);
-                }
-                Console.WriteLine();
-            }
-
-            // diagnostic details
-            // foreach(var cell in grid.Cells) {
-            //     Console.WriteLine($"X: {cell.X} Y: {cell.Y} Distances: {string.Join(", ", cell.distances)}");
-            // }
-        }
-
-        private static void ArrangeGrid(Grid grid)
-        {
-            for (int y = 1; y <= grid.Height; y++)
-                for (int x = 1; x <= grid.Width; x++)
-                    grid.AddCell(new MyPoint(x, y));
-        }
-
-        private static HashSet<MyPoint> ReadInputFile(string inputFilePath)
+         private static HashSet<MyPoint> ReadInputFile(string inputFilePath)
         {
             HashSet<MyPoint> pointsSet = new HashSet<MyPoint>();
 
@@ -100,9 +41,9 @@ namespace _06b
                 while (!rdr.EndOfStream)
                 {
                     MyPoint point = MyPoint.CreatePoint(rdr.ReadLine());
-                    point.AddSymbolDistance(symbol, 0);
                     pointsSet.Add(point);
                     point.IsMasterPoint = true;
+                    point.Symbol = symbol;
 
                     symbol = symbol.NextSymbol();
                 }
@@ -129,11 +70,68 @@ namespace _06b
 
             return grid;
         }
+        
+        private static void ArrangeGrid(Grid grid)
+        {
+            for (int y = 1; y <= grid.Height; y++)
+                for (int x = 1; x <= grid.Width; x++)
+                    grid.AddCell(new MyPoint(x, y));
+        }
+
+        private static void PopulateGrid(Grid grid, HashSet<MyPoint> pointsSet)
+        {
+            foreach (var point in pointsSet) 
+            {
+                grid.AddCell(point);
+            }
+        }
+
+        private static void CalculateDistanceForCell(Grid grid)
+        {
+            HashSet<MyPoint> masterCells = grid.GetMasterCells();
+
+            for(int y = 1; y <= grid.Height; y++)
+            {
+				for(int x = 1; x <= grid.Width; x++) {
+					MyPoint cell = grid.GetCell(x, y);
+
+                    int totalDistance = 0;
+
+                    foreach(var masterCell in masterCells) {
+                        int dx = Math.Abs(x - masterCell.X);
+ 						int dy = Math.Abs(y - masterCell.Y);
+    					int distance = dx + dy;
+                        totalDistance += distance;
+                    }
+                    cell.TotalDistance = totalDistance;
+				}
+            }
+        }
+
+        private static void PrintGrid(Grid grid)
+        {
+            for (int y = 1; y <= grid.Height; y++)
+            {
+                for (int x = 1; x <= grid.Width; x++)
+                {
+                    var cell = grid.GetCell(x, y);
+                    string cellText = cell.Symbol;
+
+                    if (!cell.IsMasterPoint)
+                        cellText = cell.TotalDistance < grid.TotalDistanceLimit ? "X" : "-";
+
+                    Console.Write(cellText);
+                }
+                Console.WriteLine();
+            }
+        }
+
     }
 }
 
 public class Grid
 {
+    public int TotalDistanceLimit {get; private set; }
     private Dictionary<string, MyPoint> CellsSet { get; set; }
     public int X { get; set; }
     public int Y { get; set; }
@@ -143,43 +141,13 @@ public class Grid
     {
         this.X = this.Y = -1;
         this.CellsSet = new Dictionary<string, MyPoint>();
+        this.TotalDistanceLimit = 10000;
     }
 
     public MyPoint GetCell(int x, int y)
     {       
         string keyText = $"{x}:{y}";
         return this.CellsSet[keyText];
-    }
-
-    
-    public Tuple<string, int> GetLargestArea() {
-        var infiniteNamesQuery = 
-                    from x in this.CellsSet
-                    where isInfinite(x.Value)
-                    select x.Value.GetSymbol().ToLower();
-        
-        // Console.WriteLine($"Infinite points are: {string.Join(", ", infiniteNamesQuery.ToArray())}");
-
-        var groupedCellsQuery = this.CellsSet
-                    .GroupBy(c => c.Value.GetSymbol().ToLower())
-                    .Select(group => new {
-                        Symbol = group.Key,
-                        Count = group.Count()
-                    })
-                    .OrderByDescending(x => x.Count);
-
-        var finiteGroupedCellsQuery = from c in groupedCellsQuery
-                                        where !infiniteNamesQuery.Contains(c.Symbol)
-                                        select c;
-                                        
-        // Console.WriteLine($"Finite points are: {string.Join(", ", finiteGroupedCellsQuery.ToList())}");
-        
-        return new Tuple<string, int>(finiteGroupedCellsQuery.First().Symbol, finiteGroupedCellsQuery.First().Count);
-    }
-
-    private bool isInfinite(MyPoint point) {
-        bool result = (point.X == this.X || point.X == this.Width || point.Y == this.Y || point.Y == this.Height);
-        return result;
     }
 
     public void AddCell(MyPoint point)
@@ -190,12 +158,29 @@ public class Grid
         else
             this.CellsSet.Add(keyText, point);
     }
+
+    public HashSet<MyPoint> GetMasterCells() {
+        var query = from c in this.CellsSet
+                    where c.Value.IsMasterPoint
+                    select c.Value;
+
+        return query.ToHashSet();
+    }
+
+    public int GetSizeOfRegion() {
+        var query = from c in this.CellsSet
+                    where c.Value.TotalDistance < this.TotalDistanceLimit
+                    select c;
+
+        return query.Count();
+    }
 }
 
 public class MyPoint
 {
     public bool IsMasterPoint { get; set; }
-    private Dictionary<string, int> distances;
+    public int TotalDistance {get; set; }
+    public string  Symbol {get; set; }
     public int X { get; }
     public int Y { get; }
     public static MyPoint CreatePoint(string data)
@@ -210,36 +195,6 @@ public class MyPoint
     {
         this.X = x;
         this.Y = y;
-        this.distances = new Dictionary<string, int>();
-    }
-
-    public void AddSymbolDistance(string name, int value)
-    {
-        if (this.distances.ContainsKey(name) && this.distances[name] > value)
-            this.distances[name] = value;
-        else if (!this.distances.ContainsKey(name))
-            this.distances.Add(name, value);
-    }
-
-    public string GetSymbol()
-    {
-        if (this.distances.Count > 0) {
-            var query = from d in this.distances
-                orderby d.Value ascending
-                select d;
-        
-            var top = query.First();
-            var countValue = from v in this.distances.Values
-                         where v.Equals(top.Value)
-                         select v;
-            
-            if (countValue.Count() > 1)
-                return "*";
-            else
-                return top.Key;
-        }
-        else
-            return "-";
     }
 }
 
