@@ -40,24 +40,21 @@ namespace _06a
 
         private static void CalculateDistanceForCell(int originX, int originY, string symbol, Grid grid)
         {
-            Parallel.For(1, grid.Height, (y) =>
+            for(int y = 1; y <= grid.Height; y++)
             {
-                Parallel.For(1, grid.Width, (x) =>
-                {
-                    MyPoint cell = grid.GetCell(x, y);
-                    if (!cell.IsMasterPoint) {
-                        int dx = Math.Abs(x - originX);
-                        int dy = Math.Abs(y - originY);
-                        int distance = dx + dy;
-                        
-                        cell.AddSymbolDistance(symbol, distance);
+				for(int x = 1; x <= grid.Width; x++) {
+					MyPoint cell = grid.GetCell(x, y);
 
-                        // uncomment code below for small animation
-                        // PrintGrid(grid);
-                        // System.Threading.Thread.Sleep(100);
-                    }
-                });
-            });
+					if (!cell.IsMasterPoint) {
+						int dx = Math.Abs(x - originX);
+						int dy = Math.Abs(y - originY);
+						int distance = dx + dy;
+
+    					cell.AddSymbolDistance(symbol, distance);
+					}
+
+				}
+            }
         }
 
         private static void PrintGrid(Grid grid)
@@ -156,26 +153,32 @@ public class Grid
 
     
     public Tuple<string, int> GetLargestArea() {
-        var finitiveNamesQuery = this.CellsSet
-                            .Where(c => !isInfinitive(c.Value))
-                            .Select(c => c.Value.GetSymbol().ToLower())
-                            .Distinct();
+        var infiniteNamesQuery = 
+                    from x in this.CellsSet
+                    where isInfinite(x.Value)
+                    select x.Value.GetSymbol().ToLower();
+        
+        // Console.WriteLine($"Infinite points are: {string.Join(", ", infiniteNamesQuery.ToArray())}");
 
-        var query = this.CellsSet
-                    .Where(c => finitiveNamesQuery.Contains(c.Value.GetSymbol().ToLower()))
+        var groupedCellsQuery = this.CellsSet
                     .GroupBy(c => c.Value.GetSymbol().ToLower())
                     .Select(group => new {
                         Symbol = group.Key,
                         Count = group.Count()
                     })
                     .OrderByDescending(x => x.Count);
+
+        var finiteGroupedCellsQuery = from c in groupedCellsQuery
+                                        where !infiniteNamesQuery.Contains(c.Symbol)
+                                        select c;
+                                        
+        // Console.WriteLine($"Finite points are: {string.Join(", ", finiteGroupedCellsQuery.ToList())}");
         
-        return new Tuple<string, int>(query.First().Symbol, query.First().Count);
+        return new Tuple<string, int>(finiteGroupedCellsQuery.First().Symbol, finiteGroupedCellsQuery.First().Count);
     }
 
-    private bool isInfinitive(MyPoint point) {
-        bool isMaster = point.IsMasterPoint;
-        bool result = point.IsMasterPoint && (point.X == this.X || point.X == this.Width || point.Y == this.Y || point.Y == this.Height);
+    private bool isInfinite(MyPoint point) {
+        bool result = (point.X == this.X || point.X == this.Width || point.Y == this.Y || point.Y == this.Height);
         return result;
     }
 
