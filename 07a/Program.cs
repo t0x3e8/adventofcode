@@ -11,6 +11,8 @@ namespace _07a
 {
     class Program
     {
+        static bool IsDebug = false;
+
         static void Main(string[] args)
         {
             var sw = new Stopwatch();
@@ -18,7 +20,8 @@ namespace _07a
             Console.WriteLine($"StopWatch started.");
 
             Dictionary<string, Step> stepsSet = ReadInputFile("input.txt");
-            Print(stepsSet);
+            if(IsDebug)
+                Print(stepsSet);
 
             AnalyzeSteps(stepsSet);
 
@@ -44,47 +47,65 @@ namespace _07a
                     Step rootStep;
                     Step childStep = (stepsSet.ContainsKey(childStepName) ? stepsSet[childStepName] : new Step(childStepName));
 
-                    if (stepsSet.ContainsKey(rootStepName)) {
+                    if (stepsSet.ContainsKey(rootStepName))
+                    {
                         stepsSet[rootStepName].AddChild(childStep);
-                    } else {
+                    }
+                    else
+                    {
                         rootStep = new Step(rootStepName);
                         rootStep.AddChild(childStep);
                         stepsSet.Add(rootStepName, rootStep);
-                    }   
+                    }
                 }
             }
-            return stepsSet;        
+            return stepsSet;
         }
 
-        private static void AnalyzeSteps(Dictionary<string, Step> stepsSet)
+        private static void AnalyzeSteps(Dictionary<string, Step> inputStepsSet)
         {
-            List<Step> orderedList = new List<Step>();
+            if(IsDebug)
+                Console.WriteLine($"All steps are here: {string.Join(", ", inputStepsSet.Keys.OrderBy(x => x))}");
 
-            var firstStep = StepsHelper.FindFirstStep(stepsSet);
-            var lastStep = StepsHelper.FindLastStep(stepsSet);
+            List<Step> allStepsSet = inputStepsSet.Values.OrderBy(x => x.Name).ToList();
+            List<Step> availableSteps = new List<Step>();
+            StringBuilder result = new StringBuilder();
 
-            orderedList.Add(firstStep);
-            AnalyzeSingleStep(firstStep, ref stepsSet, ref orderedList);
-            orderedList.Add(lastStep);
-                        
-            Console.WriteLine($"the first step is: {firstStep}");
-            Console.WriteLine($"Ordered steps: {string.Join("", orderedList)}");
-        }
+            int i = 0;
+            while (true)
+            {
+                availableSteps = FindAvailableSteps(allStepsSet);
+                if (availableSteps.Count == 0)
+                    break;
 
-        private static void AnalyzeSingleStep(Step rootStep, ref Dictionary<string, Step> notOrderedSteps, ref List<Step> orderedSteps)
-        {
-            foreach(var childStep in rootStep.GetChildrenOrdered()) {
-                if (notOrderedSteps.ContainsKey(childStep.Name)) {
-                    orderedSteps.Add(childStep);
-                    AnalyzeSingleStep(notOrderedSteps[childStep.Name], ref notOrderedSteps, ref orderedSteps);
-                }
-                notOrderedSteps.Remove(rootStep.Name);
-                    // var stepsCollection = StepsHelper.FindStepsContainingChild(childStep, notOrderedSteps.Values);
-                    // foreach(var backwardStep in stepsCollection) {
-                    //     AnalyzeSingleStep(backwardStep, notOrderedSteps, orderedSteps);
-                    // }
-                    
+                if(IsDebug)
+                    Console.WriteLine($"Working set {i++}: {string.Join(", ", availableSteps)}");
+
+                result.Append(availableSteps[0]);
+
+                if(IsDebug)
+                    Console.WriteLine($"Pick '{availableSteps[0]}', so the output is '{result}'");
+
+                allStepsSet.Remove(availableSteps[0]);
             }
+
+           Console.WriteLine($"The order of  steps in instructions should be completed as '{result}'");
+        }
+
+        private static List<Step> FindAvailableSteps(ICollection<Step> stepsSet)
+        {
+            List<Step> availableSteps = new List<Step>();
+
+            foreach (var step in stepsSet)
+            {
+                if (!StepsHelper.IsChild(step, stepsSet))
+                {
+                    availableSteps.Add(step);
+                }
+
+            }
+
+            return availableSteps;
         }
 
         private static void Print(Dictionary<string, Step> stepsSet)
@@ -96,52 +117,21 @@ namespace _07a
         }
     }
 
-    public static class StepsHelper {
-        public static Step FindFirstStep(Dictionary<string, Step> stepsSet) {
-            bool isRootAsChild = false;
-
-            foreach (var rootStep in stepsSet.Values) {
-                isRootAsChild = IsChild(rootStep.Name, stepsSet.Values);
-                if (isRootAsChild == false)
-                    return rootStep;
-            }
-
-            return null;
-        }
-         private static bool IsChild(string searchStepName, ICollection<Step> steps)
-         {
+    public static class StepsHelper
+    {
+        public static bool IsChild(Step searchStep, ICollection<Step> steps)
+        {
             bool isChild = false;
 
-            foreach(var childStep in steps) {
-                isChild = childStep.ContainsChild(searchStepName);
-                if (isChild) 
+            foreach (var childStep in steps)
+            {
+                isChild = childStep.ContainsChild(searchStep.Name);
+                if (isChild)
                     break;
             }
 
             return isChild;
-         }
-
-        public static Step FindLastStep(Dictionary<string, Step> stepsSet) {
-            foreach (var rootStep in stepsSet.Values) {
-                foreach (var childRootStep in rootStep.GetChildrenOrdered()) {
-                    bool isChildAsRoot = stepsSet.ContainsKey(childRootStep.Name);
-                    if (!isChildAsRoot)
-                        return childRootStep;
-                }
-            }
-
-            return null;
         }
-
-
-         public static ICollection<Step> FindStepsContainingChild(Step childStep, ICollection<Step> steps) {
-             var query = from s in steps
-                         where s.ContainsChild(childStep.Name)
-                         orderby s.Name
-                         select s;
-
-            return query.ToHashSet();
-         }
     }
 
     public class Step
@@ -158,30 +148,32 @@ namespace _07a
         {
             this.ChildSteps.Add(child);
         }
-        
-        public IOrderedEnumerable<Step> GetChildrenOrdered() {
-            return this.ChildSteps.OrderBy(s => s.Name);
-        }
 
-        public bool ContainsChild(string childName) {
+        public bool ContainsChild(string childName)
+        {
             if (childName == this.Name)
                 return false;
 
             var query = from c in this.ChildSteps
                         where c.Name.Equals(childName)
                         select c;
-            
+
             return query.Count() > 0;
         }
 
-        public override string ToString() {
+        public override string ToString()
+        {
             return $"{this.Name}";
         }
 
-        public string ToStringWithChildren() {
+        public HashSet<Step> GetChildren() {
+            return this.ChildSteps;
+        }
+        public string ToStringWithChildren()
+        {
             return $"{this.Name}: {string.Join(", ", this.ChildSteps.OrderBy(x => x.Name))}";
         }
-
+        
         public override bool Equals(object obj) {
             if (obj == null || !(obj is Step))
                 return false;
