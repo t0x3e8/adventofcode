@@ -11,7 +11,7 @@ namespace _07a
 {
     class Program
     {
-        static bool IsDebug = false;
+        static bool IsDebug = true;
 
         static void Main(string[] args)
         {
@@ -56,6 +56,8 @@ namespace _07a
                         rootStep = new Step(rootStepName);
                         rootStep.AddChild(childStep);
                         stepsSet.Add(rootStepName, rootStep);
+                        if (!stepsSet.ContainsKey(childStepName))
+                            stepsSet.Add(childStepName, childStep);
                     }
                 }
             }
