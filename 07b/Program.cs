@@ -76,15 +76,20 @@ namespace _07b
             if (IsDebug)
                 Console.WriteLine($"{"Second", -10}{"Worker 1", -10}{"Worker 2", -10}{"Worker 3", -10}{"Worker 4", -10}{"Worker 5", -10}{"Done", -10}");
 
-            int second = 0;
+            int second = -1;
             while (true)
             {
-                Console.Write($"{second++, -10}");
+                second++;
+                Console.Write($"{second, -10}");
+                HashSet<Step> temp = new HashSet<Step>();
+                bool isAnyWorkLeft = false;
 
                 for (int workerNumber = 1; workerNumber <= 5; workerNumber++) { 
                     availableSteps = FindAvailableSteps(allStepsSet, workerNumber);
                     
                     if (availableSteps.Count > 0) {
+                        isAnyWorkLeft = true;
+
                         var workingStep = availableSteps.Where(s => s.WorkerNumber == workerNumber).FirstOrDefault();
                         if (workingStep == null)
                             workingStep = availableSteps[0];
@@ -95,21 +100,27 @@ namespace _07b
                         
                         if (workingStep.IsWorkDone(second, workerNumber)) {
                             result.Append(workingStep);
-                            allStepsSet.Remove(workingStep);              
+                            temp.Add(workingStep);              
                         } 
                         Console.Write($"{workingStep, -10}");
                     }
-                    else                        
+                    else {                       
                         Console.Write($"{".", -10}");
+                        isAnyWorkLeft |= false;
+                    }
                 }
+
+                foreach(var stepToRemove in temp)
+                    allStepsSet.Remove(stepToRemove);
+
                 Console.Write($"{result, -10}");
                 Console.WriteLine();
 
-                if (allStepsSet.Count == 0)
+                if (!isAnyWorkLeft)
                     break;
             }
 
-           Console.WriteLine($"The order of  steps in instructions should be completed as '{result}'");
+           Console.WriteLine($"With 5 workers and the 60+ second step durations it takes '{second}' sec. to complete all of the steps '{result}'");
         }
 
         private static List<Step> FindAvailableSteps(ICollection<Step> stepsSet, int workerNumber)
