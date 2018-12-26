@@ -20,14 +20,34 @@ namespace _08b
             Console.WriteLine($"StopWatch started.");
 
             var nodes = ReadInputFile("input.txt");
-            var sumOfNodesMetadatas = nodes.Sum(n => n.Metadata.Sum());
-            Console.WriteLine($"The sum of all metadata entries is {sumOfNodesMetadatas}");
+            var sumOfRootNode = CalculateSumOf(nodes[0]);
+            Console.WriteLine($"The value of the root node is: {sumOfRootNode}");
 
             sw.Stop();
             Console.WriteLine($"Stopwatch stops: {sw.Elapsed.TotalSeconds}");
         }
 
-        private static List<Node> ReadInputFile(string inputFilePath)
+    private static int CalculateSumOf(Node workingNode)
+    {
+        int result = 0;
+        if (workingNode.ChildQuantity > 0) {
+            for(int i=0; i < workingNode.MetadataQuantity; i++) {
+                int metadataValue = workingNode.Metadata[i];
+                if (workingNode.ChildQuantity >= metadataValue) {
+                    Node childNode = workingNode.Children[metadataValue - 1];
+                    if (childNode != null) {
+                        result += CalculateSumOf(childNode);
+                    }
+                } 
+            }
+        } else {
+            result += workingNode.Metadata.Sum(); 
+        }
+
+        return result;
+    }
+
+    private static List<Node> ReadInputFile(string inputFilePath)
         {
             List<Node> nodes = new List<Node>();
             
@@ -36,13 +56,13 @@ namespace _08b
                 var rdr = new StreamReader(stream);
                 string input = rdr.ReadToEnd();
 
-                ReadNodes(input.Split(' '), 0, ref nodes);
+                ReadNodes(input.Split(' '), 0, ref nodes, null);
             }
 
             return nodes;
         }
 
-        private static int ReadNodes(string [] numbers, int currentPos, ref List<Node> nodes) {
+        private static int ReadNodes(string [] numbers, int currentPos, ref List<Node> nodes, Node parentNode) {
             int childQuantity = -1;
             int metadataQuantity = -1;
             Node tempNode = null;
@@ -60,18 +80,31 @@ namespace _08b
                 }
                 // read metadata numbers or create a new node
                 else if (childQuantity != -1 && metadataQuantity != -1) {
-                    for(int childNumber = 1; childNumber <= childQuantity; childNumber++) {
-                        currentPos = ReadNodes(numbers, currentPos, ref nodes);
-                    }                     
-                    
                     tempNode = new Node() {ChildQuantity = childQuantity, MetadataQuantity = metadataQuantity};
+
+                    for(int childNumber = 1; childNumber <= childQuantity; childNumber++) {
+                        currentPos = ReadNodes(numbers, currentPos, ref nodes, tempNode);
+                    }                     
 
                     int metadataQuantityMaxPosition = currentPos + metadataQuantity;
                     for(; currentPos < metadataQuantityMaxPosition; currentPos++) {
                         tempNode.Metadata.Add(int.Parse(numbers[currentPos]));
                     }
 
-                    nodes.Add(tempNode);
+                    if (parentNode != null) {
+                        var parentFromCollection = nodes.Find(n => n == parentNode);
+                        if (parentFromCollection == null) {
+                            parentNode.Children.Add(tempNode);
+                        }
+                        else
+                        {
+                            parentFromCollection.Children.Add(tempNode);
+                        }
+                    }
+                    else{
+                        nodes.Add(tempNode);
+                    }
+
                     childQuantity = metadataQuantity = -1; // reset
                     return currentPos;
                 }
@@ -88,6 +121,8 @@ namespace _08b
         public Node()
         {
              this.Metadata = new List<int>();
+             this.Children = new List<Node>();
         }
+        public List<Node> Children { get; set; }
     }
 }
