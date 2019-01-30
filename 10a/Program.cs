@@ -44,7 +44,9 @@ namespace _10a
             }
 
             // Print(grid, sec);
-            Save2PNG(grid, sec);
+            string fileName = Save2PNG(grid, sec);
+            Console.WriteLine($"Result can be found in the file '{fileName}'");
+            Console.WriteLine($"It was all calculated in {sec} seconds");
 
             sw.Stop();
             Console.WriteLine($"Stopwatch stops: {sw.Elapsed.TotalSeconds}");
