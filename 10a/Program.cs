@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Reflection;
 
 namespace _10a
 {
@@ -59,8 +60,9 @@ namespace _10a
             }
         }
 
-        private static void Save2PNG(Grid grid, int sec)
+        private static string Save2PNG(Grid grid, int sec)
         {
+            string fileName= null;
             using (var image = new Bitmap(grid.Width, grid.Height))
             {
                 using (var graphics = Graphics.FromImage(image))
@@ -74,9 +76,13 @@ namespace _10a
                                 graphics.FillRectangle(Brushes.Red, x, y, 1, 1);
                         }
                     }
-                    image.Save($"./sec{sec}.png", ImageFormat.Png);
+                    string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                    fileName = $"{directory}\\sec{sec}.png";
+                    image.Save(fileName, ImageFormat.Png);
                 }
             }
+
+            return fileName;
         }
         private static void Print(Grid grid, int sec)
         {
